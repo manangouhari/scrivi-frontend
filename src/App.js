@@ -195,7 +195,7 @@ function App() {
   useEffect(() => {
     if (loading) {
       console.log("loading is:", loading);
-      post("http://localhost:5000/analyse", { text: textVal })
+      post("https://scrivi-backend.herokuapp.com/analyse", { text: textVal })
         .then((res) => res.data)
         .then((data) => {
           setTextAnalysis(data);
